@@ -11,7 +11,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'cat /etc/alpine-release'
-		date +"%T"
+		sh 'date +"%T"'
             }
         }
     }
